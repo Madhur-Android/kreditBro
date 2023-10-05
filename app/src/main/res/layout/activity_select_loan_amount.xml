@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_color"
+    android:orientation="vertical"
+    tools:context=".SelectLoanAmount">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="70dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bankinglogo"
+            android:scaleType="fitXY"
+            />
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Loan Amount"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/oval"
+                    android:backgroundTint="#9F0D7F">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"/>
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:background="@color/purplelight"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/oval"
+                    android:backgroundTint="@color/red">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"/>
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:background="@color/purplelight"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"/>
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/oval"
+                    android:backgroundTint="@color/red">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"/>
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:background="@color/purplelight"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"/>
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/oval"
+                    android:backgroundTint="@color/red">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"/>
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="25dp"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_bar_ruler"
+                android:thumb="@drawable/seek_bar_slider" />
+
+
+            <RelativeLayout
+                android:layout_below="@id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tvMinInvestment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="10000 \u20B9"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMaxInvestment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="50000 \u20B9"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/etAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/editbackground"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:text="10000"
+                android:textColor="@color/green"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:drawableTint="@color/green"
+                android:layout_gravity="center"/>
+
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_select"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/purple_lit"
+                android:text="Proceed"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="60dp"
+                app:cornerRadius="25dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

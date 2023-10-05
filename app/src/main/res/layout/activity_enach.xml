@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".E_Nach">
+
+
+   <LinearLayout
+       android:layout_width="280dp"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:background="@drawable/e_nach"
+       >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         android:gravity="center"
+         android:orientation="vertical"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp">
+
+         <ImageView
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+            android:src="@drawable/bankinglogo"
+            android:padding="5dp"/>
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:text="E-nach \n registration"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginTop="15dp"
+             android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="Name:-"
+               android:textColor="@color/black"
+               android:textSize="16dp"
+               />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="megma Group"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginStart="10dp"/>
+
+
+
+
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="5dp"
+             android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile:-"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9999999999"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginStart="10dp"/>
+
+
+
+
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="5dp"
+             android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:-"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:gravity="center"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bsn@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"/>
+
+
+
+
+
+
+         </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="150dp"
+    android:layout_height="40dp"
+   android:background="@drawable/editbackground"
+   android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp">
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Make a Payment"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:textColor="@color/black"/>
+
+
+
+</RelativeLayout>
+
+
+      </LinearLayout>
+
+
+
+
+
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>
